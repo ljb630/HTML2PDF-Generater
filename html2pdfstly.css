@@ -2,15 +2,7 @@ body {
     background: rgb(204,204,204); 
   }
 
-#right-qr  {
-    display: flex;
-    align-content: stretch;
-    align-items: center;
-}
-img {
-    height: 120px;
-    width: 120px;
-}
+/* page */
 page {
 background: white;
 display: block;
@@ -56,10 +48,15 @@ body, page {
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+font-family: sans-serif;
 }
 button{
 margin: 10px; 
 padding: 10px;
+}
+button:hover{
+    background-color: black;
+    color: white;
 }
 #all-in-one-set{
 margin: 5px; 
@@ -115,10 +112,43 @@ justify-content: space-between;
 }
 
 
+#right-qr  {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+}
+img {
+    height: 120px;
+    width: 120px;
+}
+
+
 /* footer */
 #fot-dwn{
 margin: 15px;
 padding: 15px;
 display: flex;
 justify-content: space-between;
+}
+
+.logo-nam{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.logo-nam img{
+    width: 30px;
+    height: 30px;
+}
+#currentDate{
+    border: none;
+}
+#currentDate:hover{
+    background-color: rgb(59, 57, 57);
+    color: white;
+   border-radius: 5px;
+   cursor: pointer;
+
+
 }
