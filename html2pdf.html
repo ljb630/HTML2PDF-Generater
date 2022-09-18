@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html2pdf</title>
+    <link rel="stylesheet" href="html2pdfstly.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <page size="A4">
+
+        <button onClick="printToPDF();">
+            Print to PDF
+        </button>
+
+        <div id="all-in-one-set">
+
+            <div id="bdy">
+                <h4 id="left-sdie">Payslip</h4>
+
+                <!-- right side qr starts here -->
+                <div id="right-qr">
+                    <div class="content">
+                    <h3> <strong>Marcans Estonia 171</strong> </h3><br>
+                    <p>vaike-Tahe 20</p><br>
+                    <p>Tartu EE</p><br></div>
+                    <div class="imagee">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="Error"></div>
+                </div>
+                <!-- right side qr ends here -->
+
+            </div>
+
+            <!-- section 1  -->
+            <div id="cont-2">
+                <section id="cand-details">
+
+                    <div id="sub-div">
+                        <div class="dat-1">
+                            <h4> Name </h4>
+                            <h4> Address </h4>
+                            <h4> ID No. </h4>
+                            <h4> SS No. </h4>
+                        </div>
+
+                        <div id="data-1">
+                            <p>Jhon Doe (001)9</p>
+                            <p>Vaike-Tahe 20, Tartu, Estonia</p>
+                            <p> 769319L</p>
+                            <p> A38534950 </p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div id="sub-div">
+                        <div class="dat-1">
+                            <h4>Department</h4>
+                            <h4>Unit</h4>
+                            <h4>Occupation</h4>
+                            <h4>Roll(s)</h4>
+                            <h4>Pay Date</h4>
+                            <h4>Roll Period</h4>
+                            <h4>Section</h4>
+                            <h4>Grade</h4>
+                        </div>
+                        <div id="data-1">
+                            <p>Compliance</p>
+                            <p>xxxxxxx</p>
+                            <p>Head of Compliance & MLRO</p>
+                            <p>Payroll Run 07(2022-007)</p>
+                            <p>29/07/2022</p>
+                            <p>01/07/2022 - 31/07/2022</p>
+                            <p>xxxxxx</p>
+                            <p>xxxxxxx</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Benefits to Date</h4>
+                    <hr>
+                    <div id="sub-div">
+                        <div class="dat-1">
+                            <h4>Category 1</h4>
+                            <h4>Category 2</h4>
+                            <h4>Category 3</h4>
+                            <h4>ShareOpt</h4>
+                        </div>
+                        <div id="data-1">
+                            <p>0.00</p>
+                            <p>0.00</p>
+                            <p>0.00</p>
+                            <p>0.00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Totals to Date</h4>
+                    <hr>
+                    <div id="sub-div">
+                        <div class="dat-1">
+                            <h4>Gross</h4>
+                            <h4>OT Con.Gross</h4>
+                            <h4>OT Con.Hours</h4>
+                            <h4>Social Security</h4>
+                            <h4>Tax(FSS)</h4>
+                            <h4>Tax(OT Con.)</h4>
+                            <h4>Tax(Arrears)</h4>
+                            <h4>Tax(ShareOpt)</h4>
+                        </div>
+                        <div id="data-1">
+                            <p>0.123</p>
+                            <p>0.123</p>
+                            <p>0.123</p>
+                            <p>0.123</p>
+                            <p>0.123</p>
+                            <p>0.123</p>
+                            <p>0.123</p>
+                            <p>0.123</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Leave Type</h4>
+                    <hr>
+
+                    <div class="empty-space">
+
+                    </div>
+                </section>
+
+
+
+
+                <!-- Section 2 -->
+
+                <section id="invoice">
+                    <div class="in-data">
+                        <h4>Basic</h4>
+                        <h4>173.33 Hours</h4>
+                        <h4>7,811.00</h4>
+                    </div>
+                    <div class="ext-data">
+                        <p>Salary</p>
+                        <p>173.33 X 45.23213</p>
+                        <p>7,811.00</p>
+                    </div>
+                    <hr>
+                    <div class="in-data">
+                        <h4>Fringe_Benefit</h4>
+                        <h4>173.33 Hours</h4>
+                        <h4>7,811.00 </h4>
+
+                    </div>
+                    <div class="ext-data">
+                        <p>Life Policy Allowance</p>
+                        <p>1.00</p>
+                        <p>x 32.0800000</p>
+                        <p>32.08</p>
+                    </div>
+                    <div class="ext-data">
+                        <p>Medical Allowance</p>
+                        <p>1.00</p>
+                        <p>x 45.0800000</p>
+                        <p>72.08</p>
+                    </div>
+                    <hr>
+                    <h4>Gross Total</h4>
+                    <hr>
+                    <div class="in-data">
+                        <h4>Adjustment</h4>
+                        <h4>7.00 </h4>
+                    </div>
+                    <div class="ext-data">
+                        <p>Adjustment Post Tax</p>
+                        <p>1.00</p>
+                        <p>x 20.0800000</p>
+                        <p>7.08</p>
+                    </div>
+                    <div class="in-data">
+                        <h4>Tax (FSS Main Method Single Tax Bands)</h4>
+                        <h4>- 2,034.00 </h4>
+                    </div>
+                    <div class="in-data">
+                        <h4>Social Security (4 weeks)</h4>
+                        <h4>-199.88 </h4>
+                    </div>
+                    <hr>
+                    <div class="in-data">
+                        <h4>Net</h4>
+                        <h4>€ 5,662.03</h4>
+                    </div>
+
+
+
+                </section>
+            </div>
+
+
+            <footer id="fot-dwn">
+
+                <div class="logo-nam">
+                    <img src="#" alt="Error">
+                    <P>Blizz</P>
+
+                </div>
+
+                <!-- <input type="button" value="Print Contents" id="PrintNow" /> -->
+
+                <div class="date-time">
+                    <input id="currentDate" type="date" />
+                    <input id="currentDate" type="time" />
+
+                </div>
+
+            </footer>
+
+        </div>
+
+    </page>
+
+    <script>
+        var printToPDF = () => {
+            var printableArea = document.getElementById('all-in-one-set');
+            html2pdf(printableArea);
+        }
+    </script>
+
+</body>
+
+</html>
